@@ -12,58 +12,160 @@
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="https://cdn-icons-png.flaticon.com/256/87/87390.png" width="30px" height="30px"> Instagram
-        </a>
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-success me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Create a new post
-                </button>
-            </li>
-            <li class="nav-item">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-gear"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
-                    </ul>
+      <!-- BRAND -->
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn-icons-png.flaticon.com/256/87/87390.png" width="30px" height="30px"> Instagram
+      </a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <!-- MODAL -->
+          <button type="button" class="btn btn-success me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new post
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
+                <div class="modal-body">
+                  <div class="form-group">
                     <h6>Caption:</h6>
-                    <textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextarea"></textarea>
+                    <textarea class="form-control" placeholder="Add the caption of your post here"
+                      id="floatingTextarea"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-light mt-2 me-2"><i class="fa-solid fa-camera"></i></button>
+                  <button type="button" class="btn btn-light mt-2 ml-2"><i
+                      class="fa-solid fa-location-dot"></i></button>
                 </div>
-                <button type="button" class="btn btn-light mt-2 me-2"><i class="fa-solid fa-camera"></i></button>
-                <button type="button" class="btn btn-light mt-2 ml-2"><i class="fa-solid fa-location-dot"></i></button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success">Publish</button>
-            </div>
-        </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <!-- DROPDOWN -->
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-</div>
+  </nav>
+
+  <!-- FEED -->
+  <!-- IMAGE 1 -->
+  <div class="container d-flex justify-content-center mt-5">
+    <div class="card rounded-0" style="width: 30rem;">
+      <div class="card-header d-flex justify-content-between pb-0">
+        <p>Mountains</p>
+        <p>04/25</p>
+      </div>
+      <img
+        src="https://hips.hearstapps.com/hmg-prod/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg"
+        class="card-img-top rounded-0" alt="...">
+      <div class="card-body">
+        <h6 class="card-title fw-bold">204 Likes</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis saepe est qui
+          blanditiis repellat corrupti, facere hic eos totam, fugiat exercitationem nemo sint id tempore quibusdam
+          molestias fuga. Numquam?</p>
+      </div>
+    </div>
+  </div>
+  <!-- IMAGE 2 -->
+  <div class="container d-flex justify-content-center mt-3">
+    <div class="card rounded-0" style="width: 30rem;">
+      <div class="card-header d-flex justify-content-between pb-0">
+        <p>Beach</p>
+        <p>11/25</p>
+      </div>
+      <img src="https://cdn.mos.cms.futurecdn.net/wtqqnkYDYi2ifsWZVW2MT4-1200-80.jpg" class="card-img-top rounded-0"
+        alt="...">
+      <div class="card-body">
+        <h6 class="card-title fw-bold">320 Likes</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis saepe est qui
+          blanditiis repellat corrupti, facere hic eos totam, fugiat exercitationem nemo sint id tempore quibusdam
+          molestias fuga. Numquam?</p>
+      </div>
+    </div>
+  </div>
+  <!-- IMAGE 3 -->
+  <div class="container d-flex justify-content-center mt-3">
+    <div class="card rounded-0" style="width: 30rem;">
+      <div class="card-header d-flex justify-content-between pb-0">
+        <p>Jungle</p>
+        <p>12/25</p>
+      </div>
+      <img src="https://as1.ftcdn.net/v2/jpg/01/84/44/82/1000_F_184448258_TdQNk0v8NlcJgnIHe0fBE0Un8KoddIlw.jpg"
+        class="card-img-top rounded-0" alt="...">
+      <div class="card-body">
+        <h6 class="card-title fw-bold">2555 Likes</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis saepe est qui
+          blanditiis repellat corrupti, facere hic eos totam, fugiat exercitationem nemo sint id tempore quibusdam
+          molestias fuga. Numquam?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE 4 -->
+  <div class="container d-flex justify-content-center mt-3">
+    <div class="card rounded-0" style="width: 30rem;">
+      <div class="card-header d-flex justify-content-between pb-0">
+        <p>My Crazy Dog Spark!</p>
+        <p>01/25</p>
+      </div>
+      <img
+        src="https://hips.hearstapps.com/hmg-prod/images/alpe-di-siusi-sunrise-with-sassolungo-or-langkofel-royalty-free-image-1623254127.jpg"
+        class="card-img-top rounded-0" alt="...">
+      <div class="card-body">
+        <h6 class="card-title">204 Likes</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis saepe est qui
+          blanditiis repellat corrupti, facere hic eos totam, fugiat exercitationem nemo sint id tempore quibusdam
+          molestias fuga. Numquam?</p>
+      </div>
+    </div>
+  </div>
+  <!-- IMAGE 5 -->
+  <div class="container d-flex justify-content-center mt-3 mb-5">
+    <div class="card rounded-0" style="width: 30rem;">
+      <div class="card-header d-flex justify-content-between pb-0">
+        <p>Desert</p>
+        <p>02/25</p>
+      </div>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/624/535/778/arena-atardecer-desierto-dunas-wallpaper-preview.jpg"
+        class="card-img-top rounded-0" alt="...">
+      <div class="card-body">
+        <h6 class="card-title fw-bold">670 Likes</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis saepe est qui
+          blanditiis repellat corrupti, facere hic eos totam, fugiat exercitationem nemo sint id tempore quibusdam
+          molestias fuga. Numquam?</p>
+      </div>
+    </div>
+  </div>
+
+
+
 
 
 
